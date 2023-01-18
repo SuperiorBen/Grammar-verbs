@@ -1,0 +1,32 @@
+.input-content{
+    display: flex;
+    width: 90%;
+    margin-bottom: 1em;
+}
+.css-1u3bzj6-MuiFormControl-root-MuiTextField-root{
+    width: 90%;
+    position: relative;
+    right: 0%;
+}
+
+.fa-check{
+    color: #357a38;
+    position: relative;
+    right: -85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-xmark{
+    color: #e91e63;
+    position: relative;
+    right: -85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-border {
+    border-color: #3E68A8 !important;
+}
