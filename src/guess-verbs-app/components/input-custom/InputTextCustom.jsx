@@ -11,7 +11,7 @@ export const InputTextCustom = ({title, text, getValueInput, read}) => {
     const theme = createTheme({
         palette: {
           outlineCustom: {
-            main: '#fc5e48'
+            main: '#b5906b'
           },
         },
       });
