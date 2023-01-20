@@ -1,0 +1,122 @@
+
+.main-content-component {
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2efe387;
+    border-radius: 20px;
+    border: 1px solid #00000008;
+    box-shadow: 2px 2px 2px #00000008, -2px -2px 2px #00000008;
+    margin-top: 4em;
+}
+
+
+.header-content {
+    width: 100%;
+    height: 10em;
+    position: relative;
+    top: -6em;
+}
+
+.header-content>.title-app {
+    margin: 0px;
+    font-size: 5em;
+    font-weight: 800;
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    position: relative;
+    top: -3em;
+    left: 1em;
+    z-index: 2;
+    line-height: 39px;
+    width: 3em;
+    text-shadow: -2px 2px 2px #0000003b, 2px 0px 2px #0000003b;
+}
+
+.header-content>#animationContent {
+    width: 16em;
+    position: relative;
+    top: -6.3em;
+    left: 0em;
+    z-index: 3;
+    margin: auto;
+}
+
+.header-content>.circle {
+    background-color: #a7a390;
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    position: relative;
+    top: 0em;
+    z-index: 1;
+    margin: auto;
+}
+
+
+.inputs-form {
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.btn-actions {
+    width: 20em;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.btn-check {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 3em;
+    border: 1px solid #00000008;
+    box-shadow:
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1em;
+    background: #f3b43c;
+    margin-bottom: 2em ;
+}
+
+.btn-check>.btn-title {
+    margin: 0px;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: white;
+    text-shadow: -2px 2px 2px #0000003b, 2px 0px 2px #0000003b;
+    position: relative;
+    left: 1em;
+    width: 7em;
+    line-height: 22px;
+    text-align: center;
+}
+
+.btn-check>#animationContentStar {
+    width: 4em;
+    margin-left: -2em;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    left: 1em;
+}

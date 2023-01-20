@@ -1,12 +1,9 @@
-import { FormControl, InputLabel, Select, MenuItem } from '@mui/material'
+
 import { useEffect, useState } from 'react'
-import animation from '../assets/cat'
-import starAnimation from '../assets/star'
-import irregularVerbs from '../assets/irregular-verbs'
-import regularVerbs from '../assets/regular-verbs'
-import { BtnCustom } from './components/btn-custom/BtnCustom'
-import { InputTextCustom } from './components/input-custom/InputTextCustom'
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { runAnimation, runAnimationStar } from "../helpers/animations";
+import { irregularVerbs, regularVerbs, BtnCustom, InputTextCustom, createTheme, ThemeProvider } from "../helpers";
+import "./app-style.css";
+import { SelectCustom } from './components/select-custom/SelectCustom';
 
 
 export const GuessVerbApp = () => {
@@ -23,49 +20,35 @@ export const GuessVerbApp = () => {
   const [verb, setVerb] = useState({})
   const [verbInput, setVerbInput] = useState({})
   const [isRead, setIsRead] = useState(true)
+  const [isCorrect, setIsCorrect] = useState({ "Present": 0, "Past": 0, "Past Participle": 0, "Spanish": 0 })
 
-  const runAnimation = () => {
-    // Lotti script for run animation
-    bodymovin.loadAnimation({
-      animationData: animation,
-      container: document.getElementById('animationContent'),
-      path: 'nombre_animacion.json',
-      renderer: 'svg', // Required
-      loop: true, // Optional
-      autoplay: true, // Optional
-      name: 'cat' // Name for future reference. Optional.
-    })
-  }
 
-  const runAnimationStar = () => {
-    // Lotti script for run animation
-    bodymovin.loadAnimation({
-      animationData: starAnimation,
-      container: document.getElementById('animationContentStar'),
-      path: 'nombre_animacion.json',
-      renderer: 'svg', // Required
-      loop: true, // Optional
-      autoplay: true, // Optional
-      name: 'star' // Name for future reference. Optional.
-    })
-  }
 
   //   Action after select verb type - set verbInput
   const getVerbs = ({ target }) => {
     setVerbType(target.value)
-    const randomElement = irregularVerbs[Math.floor(Math.random() * irregularVerbs.length)]
-
+    let randomElement = {}
+    if (target.value === 1) {
+      randomElement = irregularVerbs[Math.floor(Math.random() * irregularVerbs.length)]
+    } else if (target.value === 2) {
+      randomElement = regularVerbs[Math.floor(Math.random() * regularVerbs.length)]
+    } else {
+      const allVerbs = [...irregularVerbs, ...regularVerbs]
+      randomElement = allVerbs[Math.floor(Math.random() * allVerbs.length)]
+    }
+    setVerbUI(randomElement)
+  }
+  const setVerbUI = (randomElement) => {
     setVerbInput({
       "Present": randomElement.Present.charAt(0).toUpperCase() + randomElement.Present.slice(1),
       "Past": "",
-      "PastParticiple": "",
+      "Past Participle": "",
       "Spanish": ""
     })
     setVerb(randomElement)
     setIsRead(false)
   }
 
-  //   Run Animation
   useEffect(() => {
     document.getElementById('animationContent').innerHTML = ''
     document.getElementById('animationContentStar').innerHTML = ''
@@ -79,52 +62,46 @@ export const GuessVerbApp = () => {
     setVerbInput(verbNew)
   }
 
+  const dataInputText = {
+    'verb':verb,
+    'getValueInput': getValueInput,
+    'isCorrect': isCorrect
+  }
+
 
   return (
     <ThemeProvider theme={theme}>
-    <div className='main-content-component'>
-      <div className='header-content'>
-      <div className='circle'></div>
-        <div id="animationContent"></div>
-        <p className='title-app'>Verbs</p>
+      <div className='main-content-component'>
+        <div className='header-content'>
+          <div className='circle'></div>
+          <div id="animationContent"></div>
+          <p className='title-app'>Verbs</p>
+        </div>
+
+
+        <SelectCustom getVerbs={getVerbs} verbType={verbType} />
+
+
+        <form className='inputs-form'>
+          <InputTextCustom title='Present' text={verbInput.Present} read={true} {...dataInputText} />
+          <InputTextCustom title='Past' text={verbInput.Past} read={isRead}  {...dataInputText} />
+          <InputTextCustom title='Past Participle' text={verbInput['Past Participle']} read={isRead}  {...dataInputText} />
+          <InputTextCustom title='Spanish' text={verbInput.Spanish} read={isRead} {...dataInputText} />
+
+        </form>
+
+        <div className='btn-check'>
+          <div id="animationContentStar"></div>
+          <p className='btn-title'>Check result</p>
+        </div>
+
+        <div className='btn-actions'>
+          <BtnCustom title='Reveal all' />
+          <BtnCustom title='Try again' />
+        </div>
+
+
       </div>
-
-
-      <FormControl className='select-verb' color="outlineCustom">
-        <InputLabel id="demo-simple-select-label">Verb type</InputLabel>
-        <Select
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
-          onChange={getVerbs}
-          value={verbType}
-        >
-          <MenuItem value={1}>Irregular verbs</MenuItem>
-          <MenuItem value={2}>Regular verbs</MenuItem>
-          <MenuItem value={3}>Both types</MenuItem>
-        </Select>
-      </FormControl>
-
-
-      <form className='inputs-form'>
-        <InputTextCustom title='Present' text={verbInput.Present} getValueInput={getValueInput} read={true} />
-        <InputTextCustom title='Past' text={verbInput.Past} getValueInput={getValueInput} read={isRead} />
-        <InputTextCustom title='Past participle' text={verbInput.PastParticiple} getValueInput={getValueInput} read={isRead} />
-        <InputTextCustom title='Spanish' text={verbInput.Spanish} getValueInput={getValueInput} read={isRead} />
-
-      </form>
-
-      <div className='btn-check'>
-        <div id="animationContentStar"></div>
-        <p className='btn-title'>Check result</p>
-      </div>
-
-      <div className='btn-actions'>
-        <BtnCustom title='Reveal all' />
-        <BtnCustom title='Try again' />
-      </div>
-
-
-    </div>
     </ThemeProvider>
   )
 }

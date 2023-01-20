@@ -2,727 +2,721 @@ const irregularVerbs = [
     {
         "Present": "arise",
         "Past": "arose",
-        "PastParticiple": "arisen",
+        "Past Participle": "arisen",
         "Spanish": "surgir"
     },
     {
         "Present": "be",
-        "Past": "was \/ were",
-        "PastParticiple": "been",
-        "Spanish": "ser"
-    },
-    {
-        "Present": "be",
-        "Past": "was \/ were",
-        "PastParticiple": "been",
+        "Past": "was\/were",
+        "Past Participle": "been",
         "Spanish": "ser"
     },
     {
         "Present": "beat",
         "Past": "beat",
-        "PastParticiple": "beaten",
+        "Past Participle": "beaten",
         "Spanish": "golpear"
     },
     {
         "Present": "become",
         "Past": "became",
-        "PastParticiple": "become",
+        "Past Participle": "become",
         "Spanish": "convertirse"
     },
     {
         "Present": "begin",
         "Past": "began",
-        "PastParticiple": "begun",
+        "Past Participle": "begun",
         "Spanish": "comenzar"
     },
     {
         "Present": "bet",
         "Past": "bet\/betted",
-        "PastParticiple": "bet\/betted",
+        "Past Participle": "bet\/betted",
         "Spanish": "apostar"
     },
     {
         "Present": "bite",
         "Past": "bit",
-        "PastParticiple": "bitten",
+        "Past Participle": "bitten",
         "Spanish": "morder"
     },
     {
         "Present": "bleed",
         "Past": "bled",
-        "PastParticiple": "bled",
+        "Past Participle": "bled",
         "Spanish": "sangrar"
     },
     {
         "Present": "blow",
         "Past": "blew",
-        "PastParticiple": "blown",
+        "Past Participle": "blown",
         "Spanish": "soplar"
     },
     {
         "Present": "break",
         "Past": "broke",
-        "PastParticiple": "broken",
+        "Past Participle": "broken",
         "Spanish": "romper"
     },
     {
         "Present": "bring",
         "Past": "brought",
-        "PastParticiple": "brought",
+        "Past Participle": "brought",
         "Spanish": "traer"
     },
     {
         "Present": "build",
         "Past": "built",
-        "PastParticiple": "built",
+        "Past Participle": "built",
         "Spanish": "construir"
     },
     {
         "Present": "buy",
         "Past": "bought",
-        "PastParticiple": "bought",
+        "Past Participle": "bought",
         "Spanish": "comprar"
     },
     {
         "Present": "catch",
         "Past": "caught",
-        "PastParticiple": "caught",
+        "Past Participle": "caught",
         "Spanish": "atrapar"
     },
     {
         "Present": "choose",
         "Past": "chose",
-        "PastParticiple": "chosen",
+        "Past Participle": "chosen",
         "Spanish": "elegir"
     },
     {
         "Present": "come",
         "Past": "came",
-        "PastParticiple": "come",
+        "Past Participle": "come",
         "Spanish": "venir"
     },
     {
         "Present": "cost",
         "Past": "cost",
-        "PastParticiple": "cost",
+        "Past Participle": "cost",
         "Spanish": "costar"
     },
     {
         "Present": "creep",
         "Past": "crept",
-        "PastParticiple": "crept",
+        "Past Participle": "crept",
         "Spanish": "arrastrarse"
     },
     {
         "Present": "cut",
         "Past": "cut",
-        "PastParticiple": "cut",
+        "Past Participle": "cut",
         "Spanish": "cortar"
     },
     {
         "Present": "deal",
         "Past": "dealt",
-        "PastParticiple": "dealt",
+        "Past Participle": "dealt",
         "Spanish": "dar, repartir"
     },
     {
         "Present": "do",
         "Past": "did",
-        "PastParticiple": "done",
+        "Past Participle": "done",
         "Spanish": "hacer"
     },
     {
         "Present": "draw",
         "Past": "drew",
-        "PastParticiple": "drawn",
+        "Past Participle": "drawn",
         "Spanish": "dibujar"
     },
     {
         "Present": "dream",
         "Past": "dreamt\/dreamed",
-        "PastParticiple": "dreamt\/dreamed",
+        "Past Participle": "dreamt\/dreamed",
         "Spanish": "soñar"
     },
     {
         "Present": "drink",
         "Past": "drank",
-        "PastParticiple": "drunk",
+        "Past Participle": "drunk",
         "Spanish": "beber"
     },
     {
         "Present": "drive",
         "Past": "drove",
-        "PastParticiple": "driven",
+        "Past Participle": "driven",
         "Spanish": "conducir"
     },
     {
         "Present": "eat",
         "Past": "ate",
-        "PastParticiple": "eaten",
+        "Past Participle": "eaten",
         "Spanish": "comer"
     },
     {
         "Present": "fall",
         "Past": "fell",
-        "PastParticiple": "fallen",
+        "Past Participle": "fallen",
         "Spanish": "caer"
     },
     {
         "Present": "feed",
         "Past": "fed",
-        "PastParticiple": "fed",
+        "Past Participle": "fed",
         "Spanish": "alimentar"
     },
     {
         "Present": "feel",
         "Past": "felt",
-        "PastParticiple": "felt",
+        "Past Participle": "felt",
         "Spanish": "sentir"
     },
     {
         "Present": "fight",
         "Past": "fought",
-        "PastParticiple": "fought",
+        "Past Participle": "fought",
         "Spanish": "pelear"
     },
     {
         "Present": "find",
         "Past": "found",
-        "PastParticiple": "found",
+        "Past Participle": "found",
         "Spanish": "encontrar"
     },
     {
         "Present": "flee",
         "Past": "fled",
-        "PastParticiple": "fled",
+        "Past Participle": "fled",
         "Spanish": "huir"
     },
     {
         "Present": "fly",
         "Past": "flew",
-        "PastParticiple": "flown",
+        "Past Participle": "flown",
         "Spanish": "volar"
     },
     {
         "Present": "forget",
         "Past": "forgot",
-        "PastParticiple": "forgotten",
+        "Past Participle": "forgotten",
         "Spanish": "olvidar"
     },
     {
         "Present": "forgive",
         "Past": "forgave",
-        "PastParticiple": "forgiven",
+        "Past Participle": "forgiven",
         "Spanish": "perdonar"
     },
     {
         "Present": "forsake",
         "Past": "forsook",
-        "PastParticiple": "forsaken",
+        "Past Participle": "forsaken",
         "Spanish": "Olvidar"
     },
     {
         "Present": "freeze",
         "Past": "froze",
-        "PastParticiple": "frozen",
+        "Past Participle": "frozen",
         "Spanish": "congelar"
     },
     {
         "Present": "get",
         "Past": "got",
-        "PastParticiple": "got",
+        "Past Participle": "got",
         "Spanish": "tener, obtener"
     },
     {
         "Present": "give",
         "Past": "gave",
-        "PastParticiple": "given",
+        "Past Participle": "given",
         "Spanish": "dar"
     },
     {
         "Present": "go",
         "Past": "went",
-        "PastParticiple": "gone",
+        "Past Participle": "gone",
         "Spanish": "ir"
     },
     {
         "Present": "grind",
         "Past": "ground",
-        "PastParticiple": "ground",
+        "Past Participle": "ground",
         "Spanish": "moler"
     },
     {
         "Present": "grow",
         "Past": "grew",
-        "PastParticiple": "grown",
+        "Past Participle": "grown",
         "Spanish": "crecer"
     },
     {
         "Present": "hang",
         "Past": "hung",
-        "PastParticiple": "hung",
+        "Past Participle": "hung",
         "Spanish": "colgar"
     },
     {
         "Present": "have",
         "Past": "had",
-        "PastParticiple": "had",
+        "Past Participle": "had",
         "Spanish": "tener"
     },
     {
         "Present": "hear",
         "Past": "heard",
-        "PastParticiple": "heard",
+        "Past Participle": "heard",
         "Spanish": "oír"
     },
     {
         "Present": "hide",
         "Past": "hid",
-        "PastParticiple": "hidden",
+        "Past Participle": "hidden",
         "Spanish": "esconderse"
     },
     {
         "Present": "hit",
         "Past": "hit",
-        "PastParticiple": "hit",
+        "Past Participle": "hit",
         "Spanish": "golpear"
     },
     {
         "Present": "hold",
         "Past": "held",
-        "PastParticiple": "held",
+        "Past Participle": "held",
         "Spanish": "tener, mantener"
     },
     {
         "Present": "hurt",
         "Past": "hurt",
-        "PastParticiple": "hurt",
+        "Past Participle": "hurt",
         "Spanish": "herir, doler"
     },
     {
         "Present": "keep",
         "Past": "kept",
-        "PastParticiple": "kept",
+        "Past Participle": "kept",
         "Spanish": "guardar"
     },
     {
         "Present": "kneel",
         "Past": "knelt",
-        "PastParticiple": "knelt",
+        "Past Participle": "knelt",
         "Spanish": "arrodillarse"
     },
     {
         "Present": "know",
         "Past": "knew",
-        "PastParticiple": "known",
+        "Past Participle": "known",
         "Spanish": "saber"
     },
     {
         "Present": "lead",
         "Past": "led",
-        "PastParticiple": "led",
+        "Past Participle": "led",
         "Spanish": "encabezar"
     },
     {
         "Present": "learn",
         "Past": "learnt\/learned",
-        "PastParticiple": "learnt\/learned",
+        "Past Participle": "learnt\/learned",
         "Spanish": "aprender"
     },
     {
         "Present": "leave",
         "Past": "left",
-        "PastParticiple": "left",
+        "Past Participle": "left",
         "Spanish": "dejar"
     },
     {
         "Present": "lend",
         "Past": "lent",
-        "PastParticiple": "lent",
+        "Past Participle": "lent",
         "Spanish": "prestar"
     },
     {
         "Present": "let",
         "Past": "let",
-        "PastParticiple": "let",
+        "Past Participle": "let",
         "Spanish": "dejar"
     },
     {
-        "Present": "lie",
+        "Present": "lie(lie down)",
         "Past": "lay",
-        "PastParticiple": "lain",
+        "Past Participle": "lain",
         "Spanish": "tumbarse"
     },
     {
         "Present": "lie",
         "Past": "lied",
-        "PastParticiple": "lied",
+        "Past Participle": "lied",
         "Spanish": "Mentir"
     },
     {
-        "Present": "lay ",
+        "Present": "lay",
         "Past": "laid",
-        "PastParticiple": "laid",
+        "Past Participle": "laid",
         "Spanish": "tumbar a alguien"
     },
     {
         "Present": "lose",
         "Past": "lost",
-        "PastParticiple": "lost",
+        "Past Participle": "lost",
         "Spanish": "perder"
     },
     {
         "Present": "make",
         "Past": "made",
-        "PastParticiple": "made",
+        "Past Participle": "made",
         "Spanish": "hacer"
     },
     {
         "Present": "mean",
         "Past": "meant",
-        "PastParticiple": "meant",
+        "Past Participle": "meant",
         "Spanish": "significar"
     },
     {
         "Present": "meet",
         "Past": "met",
-        "PastParticiple": "met",
+        "Past Participle": "met",
         "Spanish": "conocer, encontrar"
     },
     {
         "Present": "pay",
         "Past": "paid",
-        "PastParticiple": "paid",
+        "Past Participle": "paid",
         "Spanish": "pagar"
     },
     {
         "Present": "put",
         "Past": "put",
-        "PastParticiple": "put",
+        "Past Participle": "put",
         "Spanish": "poner"
     },
     {
         "Present": "quit",
         "Past": "quit\/quitted",
-        "PastParticiple": "quit\/quitted",
+        "Past Participle": "quit\/quitted",
         "Spanish": "abandonar"
     },
     {
         "Present": "read",
         "Past": "read",
-        "PastParticiple": "read",
+        "Past Participle": "read",
         "Spanish": "leer"
     },
     {
         "Present": "ride",
         "Past": "rode",
-        "PastParticiple": "ridden",
+        "Past Participle": "ridden",
         "Spanish": "montar, ir"
     },
     {
         "Present": "ring",
         "Past": "rang",
-        "PastParticiple": "rung",
+        "Past Participle": "rung",
         "Spanish": "llamar por teléfono"
     },
     {
         "Present": "rise",
         "Past": "rose",
-        "PastParticiple": "risen",
+        "Past Participle": "risen",
         "Spanish": "elevar levantar"
     },
     {
         "Present": "run",
         "Past": "ran",
-        "PastParticiple": "run",
+        "Past Participle": "run",
         "Spanish": "correr"
     },
     {
         "Present": "say",
         "Past": "said",
-        "PastParticiple": "said",
+        "Past Participle": "said",
         "Spanish": "decir"
     },
     {
         "Present": "see",
         "Past": "saw",
-        "PastParticiple": "seen",
+        "Past Participle": "seen",
         "Spanish": "ver"
     },
     {
         "Present": "sell",
         "Past": "sold",
-        "PastParticiple": "sold",
+        "Past Participle": "sold",
         "Spanish": "vender"
     },
     {
         "Present": "send",
         "Past": "sent",
-        "PastParticiple": "sent",
+        "Past Participle": "sent",
         "Spanish": "enviar"
     },
     {
         "Present": "set",
         "Past": "set",
-        "PastParticiple": "set",
+        "Past Participle": "set",
         "Spanish": "fijar"
     },
     {
         "Present": "sew",
         "Past": "sewed",
-        "PastParticiple": "sewn\/sewed",
+        "Past Participle": "sewn\/sewed",
         "Spanish": "coser ropa"
     },
     {
         "Present": "shake",
         "Past": "shook",
-        "PastParticiple": "shaken",
+        "Past Participle": "shaken",
         "Spanish": "sacudir"
     },
     {
         "Present": "shine",
         "Past": "shone",
-        "PastParticiple": "shone",
+        "Past Participle": "shone",
         "Spanish": "brillar"
     },
     {
         "Present": "shoot",
         "Past": "shot",
-        "PastParticiple": "shot",
+        "Past Participle": "shot",
         "Spanish": "disparar"
     },
     {
         "Present": "show",
         "Past": "showed",
-        "PastParticiple": "shown\/showed",
+        "Past Participle": "shown\/showed",
         "Spanish": "mostrar"
     },
     {
         "Present": "shrink",
         "Past": "shrank\/shrunk",
-        "PastParticiple": "shrunk",
+        "Past Participle": "shrunk",
         "Spanish": "encoger"
     },
     {
         "Present": "shut",
         "Past": "shut",
-        "PastParticiple": "shut",
+        "Past Participle": "shut",
         "Spanish": "cerrar"
     },
     {
         "Present": "sing",
         "Past": "sang",
-        "PastParticiple": "sung",
+        "Past Participle": "sung",
         "Spanish": "cantar"
     },
     {
         "Present": "sink",
         "Past": "sank",
-        "PastParticiple": "sunk",
+        "Past Participle": "sunk",
         "Spanish": "hundir"
     },
     {
         "Present": "sit",
         "Past": "sat",
-        "PastParticiple": "sat",
+        "Past Participle": "sat",
         "Spanish": "sentarse"
     },
     {
         "Present": "sleep",
         "Past": "slept",
-        "PastParticiple": "slept",
+        "Past Participle": "slept",
         "Spanish": "dormir"
     },
     {
         "Present": "slide",
         "Past": "slid",
-        "PastParticiple": "slid",
+        "Past Participle": "slid",
         "Spanish": "deslizar"
     },
     {
         "Present": "sow",
         "Past": "sowed",
-        "PastParticiple": "sown\/sowed",
+        "Past Participle": "sown\/sowed",
         "Spanish": "sembrar"
     },
     {
         "Present": "speak",
         "Past": "spoke",
-        "PastParticiple": "spoken",
+        "Past Participle": "spoken",
         "Spanish": "hablar"
     },
     {
         "Present": "spell",
         "Past": "spelt\/spelled",
-        "PastParticiple": "spelt\/spelled",
+        "Past Participle": "spelt\/spelled",
         "Spanish": "deletrear"
     },
     {
         "Present": "spend",
         "Past": "spent",
-        "PastParticiple": "spent",
+        "Past Participle": "spent",
         "Spanish": "gastar"
     },
     {
         "Present": "spill",
         "Past": "spilt\/spilled",
-        "PastParticiple": "spilt\/spilled",
+        "Past Participle": "spilt\/spilled",
         "Spanish": "derramar"
     },
     {
         "Present": "split",
         "Past": "split",
-        "PastParticiple": "split",
+        "Past Participle": "split",
         "Spanish": "partir"
     },
     {
         "Present": "spoil",
         "Past": "spoilt\/spoiled",
-        "PastParticiple": "spoilt\/spoiled",
+        "Past Participle": "spoilt\/spoiled",
         "Spanish": "estropear"
     },
     {
         "Present": "spread",
         "Past": "spread",
-        "PastParticiple": "spread",
+        "Past Participle": "spread",
         "Spanish": "extenderse"
     },
     {
         "Present": "stand",
         "Past": "stood",
-        "PastParticiple": "stood",
+        "Past Participle": "stood",
         "Spanish": "estar de pie"
     },
     {
         "Present": "steal",
         "Past": "stole",
-        "PastParticiple": "stolen",
+        "Past Participle": "stolen",
         "Spanish": "robar"
     },
     {
         "Present": "sting",
         "Past": "stung",
-        "PastParticiple": "stung",
+        "Past Participle": "stung",
         "Spanish": "picar"
     },
     {
         "Present": "stink",
         "Past": "stank\/stunk",
-        "PastParticiple": "stunk",
+        "Past Participle": "stunk",
         "Spanish": "apestar"
     },
     {
         "Present": "strike",
         "Past": "struck",
-        "PastParticiple": "struck",
+        "Past Participle": "struck",
         "Spanish": "golpear"
     },
     {
         "Present": "swear",
         "Past": "swore",
-        "PastParticiple": "sworn",
+        "Past Participle": "sworn",
         "Spanish": "jurar"
     },
     {
         "Present": "sweep",
         "Past": "swept",
-        "PastParticiple": "swept",
+        "Past Participle": "swept",
         "Spanish": "barrer"
     },
     {
         "Present": "swim",
         "Past": "swam",
-        "PastParticiple": "swum",
+        "Past Participle": "swum",
         "Spanish": "nadar"
     },
     {
         "Present": "take",
         "Past": "took",
-        "PastParticiple": "taken",
+        "Past Participle": "taken",
         "Spanish": "tomar"
     },
     {
         "Present": "teach",
         "Past": "taught",
-        "PastParticiple": "taught",
+        "Past Participle": "taught",
         "Spanish": "enseñar"
     },
     {
         "Present": "tear",
         "Past": "tore",
-        "PastParticiple": "torn",
+        "Past Participle": "torn",
         "Spanish": "romper rasgar"
     },
     {
         "Present": "tell",
         "Past": "told",
-        "PastParticiple": "told",
+        "Past Participle": "told",
         "Spanish": "decir"
     },
     {
         "Present": "think",
         "Past": "thought",
-        "PastParticiple": "thought",
+        "Past Participle": "thought",
         "Spanish": "pensar"
     },
     {
         "Present": "throw",
         "Past": "threw",
-        "PastParticiple": "thrown",
+        "Past Participle": "thrown",
         "Spanish": "lanzar"
     },
     {
         "Present": "tread",
         "Past": "trode",
-        "PastParticiple": "trodden\/trod",
+        "Past Participle": "trodden\/trod",
         "Spanish": "pisar"
     },
     {
         "Present": "understand",
         "Past": "understood",
-        "PastParticiple": "understood",
+        "Past Participle": "understood",
         "Spanish": "entender"
     },
     {
         "Present": "wake",
         "Past": "woke",
-        "PastParticiple": "woken",
+        "Past Participle": "woken",
         "Spanish": "despertarse"
     },
     {
         "Present": "wear",
         "Past": "wore",
-        "PastParticiple": "worn",
+        "Past Participle": "worn",
         "Spanish": "llevar puesto"
     },
     {
         "Present": "weave",
         "Past": "wove",
-        "PastParticiple": "woven",
+        "Past Participle": "woven",
         "Spanish": "tejer"
     },
     {
         "Present": "weep",
         "Past": "wept",
-        "PastParticiple": "wept",
+        "Past Participle": "wept",
         "Spanish": "llorar"
     },
     {
         "Present": "win",
         "Past": "won",
-        "PastParticiple": "won",
+        "Past Participle": "won",
         "Spanish": "ganar"
     },
     {
         "Present": "wring",
         "Past": "wrung",
-        "PastParticiple": "wrung",
+        "Past Participle": "wrung",
         "Spanish": "retorcer"
     },
     {
         "Present": "write",
         "Past": "wrote",
-        "PastParticiple": "written",
+        "Past Participle": "written",
         "Spanish": "escribir"
     }
 ]

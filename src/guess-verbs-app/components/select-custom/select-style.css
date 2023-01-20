@@ -1,0 +1,12 @@
+.select-verb {
+    height: auto;
+    width: 10em;
+    margin-top: -3em !important;
+    margin-bottom: 1em !important;
+}
+
+.select-verb>label {
+    background: #f2efe3 !important;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
